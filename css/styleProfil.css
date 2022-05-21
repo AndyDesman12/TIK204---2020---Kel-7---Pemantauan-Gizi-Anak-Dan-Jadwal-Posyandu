@@ -4568,6 +4568,134 @@ header .circle {
   }
   
 }
+.show-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  user-select: none;
+  transform: translate(-50%, -50%);
+}
+.show-btn.disabled{
+  pointer-events: none;
+}
+.modal{
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  bottom: -100%;
+  width: 450px;
+  transition: bottom 0.4s, opacity 0.4s;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+}
+.modal.show{
+  bottom: 0;
+  opacity: 1;
+}
+.modal .top-content{
+  background: #2b80ef;
+  width: 100%;
+  padding: 0 0 30px 0;
+}
+.top-content .left-text{
+  text-align: left;
+  padding: 10px 15px;
+  font-size: 18px;
+  color: #f2f2f2;
+  font-weight: 500;
+  user-select: none;
+}
+.top-content .close-icon{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 23px;
+  color: silver;
+  cursor: pointer;
+}
+.close-icon:hover{
+  color: #b6b6b6;
+}
+.top-content .fa-camera-retro{
+  font-size: 80px;
+  color: #f2f2f2;
+}
+.modal .bottom-content{
+  background: white;
+  width: 100%;
+  padding: 15px 20px;
+}
+.bottom-content .text{
+  font-size: 28px;
+  font-weight: 600;
+  color: #34495e;
+}
+.bottom-content p{
+  font-size: 18px;
+  line-height: 27px;
+  color: grey;
+}
+.bottom-content .close-btn{
+  padding: 15px 0;
+}
+.show-btn button,
+.close-btn button{
+  margin-top: 5cm;
+  margin-left: 5.5cm;
+  padding: 9px 10px;
+  background: #2b80ef;
+  border: none;
+  outline: none;
+  font-size: 10px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  color: #f2f2f2;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.show-btn button{
+  padding: 12px 15px;
+}
+.show-btn button:hover,
+.close-btn button:hover{
+  background: #1e7bf5;
+}
+
+.close-btniya button{
+  padding: 9px 13px;
+  background: #27ae60;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  color: #f2f2f2;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.close-btniya button:hover{
+  background: #26a65b;
+}
+
+.close-btntidak button{
+  padding: 9px 13px;
+  background: #fd3939;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  color: #f2f2f2;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.close-btntidak button:hover{
+  background: #fa2323;
+}
 
 /* End Responsive */
 
