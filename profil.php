@@ -50,7 +50,7 @@ $email = $_GET['email'];
             <a href="#tabelideal">Tabel Ideal</a>
           </li>
           <li>
-            <a href="profil.php" class="active">Profil</a>
+          <a href= "profil.php? email=<?= $email ?>" class="active">Profil</a>
           </li>
         </ul>
       </div>
@@ -91,7 +91,9 @@ $email = $_GET['email'];
             }
           }
     ?>
-
+<br>
+<br>
+<br>
     <div class="show-btn">
       <button>Logout</button>
     </div>
@@ -114,7 +116,7 @@ $email = $_GET['email'];
             <button>Iya</button>
           </a>
           <div class="close-btntidak">
-          <a href= "profil.php? email=<?= $email ?>">
+            <a href="profil.php? email=<?= $email ?>">
               <button>Tidak</button>
             </a>
 
