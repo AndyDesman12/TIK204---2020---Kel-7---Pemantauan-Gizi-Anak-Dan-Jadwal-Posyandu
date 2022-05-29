@@ -1,4 +1,4 @@
-/// <reference path="jsplanner.d.ts" />
+/// <reference path="Scripts/jsplanner.d.ts" />
 
 var p = MindFusion.Scheduling;
 
@@ -27,16 +27,14 @@ calendar.itemCreated.addEventListener(handleItemCreated);
 function handleItemCreated(sender, args) {
    
     Email.send({
-        Host : "mail.myserver.my_domain_extension",
-        Username : "my_user_name",
-        Password : "my_password",
-        To : 'my_mail@mydomain.com',
-        From : "sender_email@mydomain.com",
+        Host : "smtp.elasticemail.com",
+        Username : "novia_b@mhs.unsyiah.ac.id",
+        Password : "Moonchild07",
+        To : 'noviabrilianty2016@gmail.com',
+        From : "Novia Brilianty",
         Subject : "Don't forget about this event",
         Body : "Reminder for " + args.item.subject,
-    }).then(
-      message => alert(message)
-    );
+    })
 
 }
 calendar.render();
