@@ -27,7 +27,10 @@ $email = $_GET['email'];
         <div class="links">
             <ul>
                 <li>
-                    <a href="kontakDokter.php? email=<?= $email ?>" class="active">Kembali</a>
+                    <a href="home.php? email=<?= $email ?>" class="active">Kembali</a>
+                </li>
+                <li>
+                    <a href="kontakDokter.php? email=<?= $email ?>" class="active">Kontak Dokter</a>
                 </li>
             </ul>
         </div>
