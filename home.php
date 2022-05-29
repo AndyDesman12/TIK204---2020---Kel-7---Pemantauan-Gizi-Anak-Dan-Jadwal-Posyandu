@@ -38,13 +38,13 @@ $email = $_GET['email'];
                 <a href="#home">Home</a>
               </li>
               <li>
-                <a href="#jadwal">Jadwal Posyandu</a>
+              <a href= "#jadwal">Jadwal Posyandu</a>
               </li>
               <li>
                 <a href="#halodoc">HaloDoc</a>
               </li>
               <li>
-                <a href="#tabelideal">Tabel Ideal</a>
+              <a href= "#tabelideal">Tabel Ideal</a>
               </li>
               <li>
                 <a href= "profil.php? email=<?= $email ?>" class="active">Profil</a>
@@ -109,12 +109,12 @@ $email = $_GET['email'];
 
                   <div class="links">
                     <br>
-                    <a href="jadwal.html" class="fitur">Lihat Jadwal</a>
+                    <a href= "Reminder.php? email=<?= $email ?>" class="fitur">Lihat Jadwal</a>
                   </div>
 
                 </div>
 
-
+                
 
                 <div class="swiper-slide review">
                   <i class="fas fa-quote-left quote"></i>
@@ -152,11 +152,11 @@ $email = $_GET['email'];
                   <i class="fas fa-quote-left quote"></i>
 
                   <p class="review-text">
-                    HaloDoc merupakan sebuah fitur yang berguna untuk mempermudah pasien berkonsultasi dengan dokter yang ahli di bidangnya sehingga pasien memperoleh pelayanan konsultasi yang maksimal
+                    HaloDoc merupakan sebuah fitur yang berguna untuk mempermudah pasien agar dapat mendapatkan informasi dengan cepat dan tepat di satu halaman, dan disediakan juga kontak - kontak Dokter yang sudah ahli di bidangnya
                   </p>
                   <div class="links">
                     <br>
-                    <a href="halodoc.html" class="fitur">Hubungi Sekarang</a>
+                    <a href= "chatBox.php? email=<?= $email ?>" class="fitur">Hubungi Sekarang</a>
                   </div>
 
                 </div>
@@ -204,7 +204,7 @@ $email = $_GET['email'];
 
                   <div class="links">
                     <br>
-                    <a href="tabel_ideal.html" class="fitur">Cek Gizi Sekarang</a>
+                    <a href= "pilih_gender.php? email=<?= $email ?>" class="fitur">Tabel Ideal</a>
                   </div>
 
                 </div>
